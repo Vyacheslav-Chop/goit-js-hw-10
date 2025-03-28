@@ -1,0 +1,125 @@
+.snackbar-page {
+  font-family: 'Montserrat', sans-serif;
+  color: #2e2f42;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+/* #region iziToast setting */
+.iziToast > .iziToast-body .iziToast-icon.ico-success {
+  filter: brightness(0) invert(1);
+}
+
+.iziToast > .iziToast-body .iziToast-icon.ico-error {
+  filter: brightness(0) invert(1);
+}
+
+.iziToast > .iziToast-close {
+  opacity: 0.8;
+  filter: brightness(0) invert(1);
+}
+/* #endregion iziToast setting */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 390px;
+  padding: 15px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label:has(input[name='delay']) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.form input[name='delay'] {
+  width: 360px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  transition: border 300ms ease both, box-shadow 300ms ease both;
+}
+
+.form input[name='delay']:hover {
+  border: 1px solid #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form input[name='delay']:active,
+.form input[name='delay']:focus {
+  border: 1px solid #4e75ff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  max-width: inherit;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  align-items: center;
+  transition: border 300ms ease both, box-shadow 300ms ease both;
+  margin-bottom: 24px;
+}
+
+fieldset:hover,
+fieldset:focus {
+  border: 1px solid #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+fieldset legend {
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+fieldset label:has(input[name='state']) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+fieldset input[name='state'] {
+  width: 20px;
+  height: 20px;
+}
+
+fieldset input[name='state']:checked {
+  accent-color: #4e75ff;
+}
+
+.form button {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 360px;
+  background-color: #4e75ff;
+  border: none;
+  transition: background-color 300ms ease both, box-shadow 300ms ease;
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #6c8cff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

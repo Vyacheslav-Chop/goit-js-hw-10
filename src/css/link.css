@@ -1,0 +1,31 @@
+.link-index {
+  display: block;
+  font-size: 16px;
+  transition: color 250ms ease, transform 250ms ease;
+  padding: 14px;
+}
+
+.link-index:hover,
+.link-index:focus {
+  color: blue;
+  transform: scale(1.01);
+}
+
+.list-task {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-task {
+  display: block;
+  font-size: 16px;
+  padding: 14px;
+  transition: color 250ms ease, transform 250ms ease;
+}
+
+.link-task:hover,
+.link-task:focus {
+  color: blue;
+  transform: scale(1.01);
+}
